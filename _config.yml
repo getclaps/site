@@ -34,6 +34,8 @@ description:           >
 # A shorter description for the sidebar.
 tagline:               A zero-config Clap Button
 
+clap_button: true
+
 # A list of keywords for your blog
 # keywords:
 #   - uuid

@@ -1,7 +1,6 @@
 ---
 layout: welcome
-worker_domain: http://localhost:8787
-worker_domain_dev: http://localhost:8787
+worker_domain: https://worker.getclaps.dev
 price_id: price_1HF9nBAKMWLvHNfJlxejlWKp
 ---
 
@@ -74,7 +73,7 @@ The example only works if your site is hosted on __localhost__ or with an [activ
 
 ```html
 <head>
-  <script type="module" src="https://unpkg.com/clap-button"></script>
+  <script type="module" src="https://unpkg.com/@getclaps/button"></script>
 </head>
 <body>
   <clap-button></clap-button>
@@ -88,7 +87,7 @@ This will render the following button:
 
 ## Pricing
 The Clap Button backend service is __$5.00 per month__ per origin for early-adopters. 
-Currently, this is limited to 100,000 views per month. If you need more [please contact me](mailto:claps@qwtel.com) with details.
+Currently, this is limited to 100,000 views per month. If you need more [please contact me](mailto:getclaps@qwtel.com) with details.
 
 After you've completed the the payment, you'll be taken to your dashboard, where you'll be able to enter your domain. 
 After this step, `<clap-button/>` will work immediately on your site. 
@@ -105,7 +104,7 @@ _However it doesn't look very nice and interactivity is limited right now._
 
 Currently, usage it limited to smaller to medium-sized websites. 
 The infrastructure supports much higher volumes, but metering is not implemented yet. 
-[Please contact me](mailto:claps@qwtel.com) if that's something you're interested in.
+[Please contact me](mailto:getclaps@qwtel.com) if that's something you're interested in.
 
 <!-- Don't feel like typing an email to a human? [Subscribe to our newsletter](#subscribe) instead and get informed when high-volume plans arrive.
 {:.note.smaller.mb2 title="Hey there!"} -->
@@ -123,7 +122,7 @@ Domains per subscription (e.g. `https://my.domain.com`)
 : 1
 
 URLs per domain
-: ∞
+: 10,000
 
 Fragments per URL (e.g. `/path#fragment`)
 : 64
@@ -198,6 +197,3 @@ h2 + clap-button[url^="#"] {
 /* h2, h3, h4, h5, h6 { text-align: center; } */
 
 </style>
-<script>
-  document.querySelector('.page > header').prepend(document.querySelector('#app-button'));
-</script>

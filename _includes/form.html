@@ -6,6 +6,6 @@
   <input type="hidden" name="success_url" value="{{ page.worker_domain }}/dashboard/new?session_id={CHECKOUT_SESSION_ID}"/>
   <input type="hidden" name="cancel_url" value="{{ site.url }}{{ site.baseurl }}/"/>
   <button type="submit" class="btn btn-primary {{ include.btn_size }}">Subscribe</button>
-  <!-- <button type="submit" class="btn btn-default {{ include.btn_size }}" style="background:none" formaction="{{ page.worker_domain_dev }}/stripe/forward">Demo</button> -->
+  <!-- <button type="submit" class="btn btn-default {{ include.btn_size }}" style="background:none" formaction="{{ page.worker_domain_stage }}/stripe/forward">Demo</button> -->
   {% unless include.btn_size == 'btn-lg' %}<a class="btn btn-default" href="#pricing" style="font-weight:normal">See Pricing</a>{% endunless %}
 </form>
