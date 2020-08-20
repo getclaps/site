@@ -1,0 +1,15 @@
+name = "clap-site-dev"
+type = "webpack"
+account_id = "efb289061241436254219b424fcea4cf"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./_site"
+entry-point = "workers-site"
+
+[env.production]
+name = "clap-site-production"
+route = "https://getclaps.dev/*"
+zone_id = "a0f647422a7f0fba9b734898e8a7883f"
