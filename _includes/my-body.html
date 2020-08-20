@@ -1,9 +1,9 @@
 <script>
-  var appButton = document.querySelector('#app-button')
+  var appButton = document.querySelector('#app-button');
   if (appButton) document.querySelector('.page > header').prepend(appButton);
   document.getElementById('_pushState').addEventListener('ready', function (e) {
     var main = e.detail.replaceEls[0];
-    appButton = main.querySelector('#app-button')
+    appButton = main.querySelector('#app-button');
     if (appButton) main.querySelector('.page > header').prepend(appButton);
   });
 </script>

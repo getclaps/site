@@ -8,9 +8,8 @@ price_id: price_1HF9nBAKMWLvHNfJlxejlWKp
 
 <clap-button id="app-button"></clap-button>
 
-A zero-config Clap Button that combines Analytics   
-with Cookie Clicker-like Engagement. [Learn More](#cookie-clicker-like-engagement){:.smaller}.
-{:.lead.centered}
+A zero-config Clap Button that combines Analytics with Cookie Clicker-like Engagement. [Learn More](#cookie-clicker-like-engagement){:.smaller}.
+{:.lead.centered style="max-width:560px;margin-left:auto;margin-right:auto"}
 
 {% include form.html %}
 
@@ -154,7 +153,7 @@ Zero-Config doesn't mean no config is possible: Make it your own with the follow
 
 
 <style>
-/* .page > header > h1, */
+.page { position: relative }
 .page > header > h1 + .hr { 
   display: none; 
 }
@@ -162,10 +161,10 @@ Zero-Config doesn't mean no config is possible: Make it your own with the follow
 .mt6 { margin-top: 6rem }
 .mb2 { margin-bottom: 1.5rem }
 
-.page { position: relative }
 clap-button {
   --clap-button-color: var(--accent-color);
 }
+
 h2 + clap-button[url^="#"] {
   margin: 0;
   width: 3rem;
