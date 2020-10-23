@@ -127,6 +127,11 @@ Fragments per URL (e.g. `/path#fragment`)
 : 64
 
 
+## Close-To Open Source
+
+The button and core of the backend worker are open sourced under [AGPL-3.0](licenses/AGPL-3.0.md) and can be freely copied and used within the limits of this license.
+Only the data access object, i.e. the database layer, remains closed source. You are free to provide your own implementation based on the [public interface](https://github.com/getclaps/worker/blob/master/src/dao.ts),
+~~or use a community-provided implementation~~.
 
 <!-- ## Config Example
 {:.mt4}

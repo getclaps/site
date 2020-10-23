@@ -3,3 +3,4 @@ vendor/bundle
 .bundle
 _site
 dist
+.jekyll-cache
