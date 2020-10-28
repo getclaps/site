@@ -1,7 +1,5 @@
 ---
 layout: welcome
-worker_domain: https://worker.getclaps.dev
-price_id: price_1HF9nBAKMWLvHNfJlxejlWKp
 ---
 
 # Clap Button
