@@ -1,5 +1,6 @@
 vendor/bundle
 .bundle
 _site
+build
 dist
 .jekyll-cache

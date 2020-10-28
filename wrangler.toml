@@ -6,7 +6,7 @@ route = ""
 zone_id = ""
 
 [site]
-bucket = "./_site"
+bucket = "./build"
 entry-point = "workers-site"
 
 [vars]
@@ -16,9 +16,6 @@ JEKYLL_ENV = 'development'
 name = "clap-site-production"
 route = "https://getclaps.dev/*"
 zone_id = "a0f647422a7f0fba9b734898e8a7883f"
-
-[env.production.site]
-bucket = "/github/workspace/build"
 
 [env.production.vars]
 JEKYLL_ENV = 'production'
