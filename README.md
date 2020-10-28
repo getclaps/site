@@ -6,7 +6,7 @@ layout: welcome
 
 <clap-button id="app-button"></clap-button>
 
-A zero-config Clap Button that combines Analytics with Cookie Clicker-like Engagement. [Learn More](#cookie-clicker-like-engagement){:.smaller}.
+A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytics) with Cookie Clicker-like [Engagement](#cookie-clicker-like-engagement).
 {:.lead.centered style="max-width:560px;margin-left:auto;margin-right:auto"}
 
 {% include form.html %}
