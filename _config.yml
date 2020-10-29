@@ -116,6 +116,11 @@ destination: ./build
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
+
+google_fonts: false
+font: false
+font_heading: false
+font_code: false
  
 # Sidebar image and theme color of the site.
 accent_image:
