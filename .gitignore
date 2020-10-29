@@ -4,3 +4,4 @@ _site
 build
 dist
 .jekyll-cache
+Gemfile.lock

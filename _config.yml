@@ -111,6 +111,8 @@ collections:
 theme:                 jekyll-theme-hydejack
 # remote_theme:          hydecorp/hydejack@v9.0.4
 
+destination: ./build
+
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
