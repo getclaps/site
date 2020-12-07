@@ -310,6 +310,7 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - wrangler.toml
 include:
   - .well-known
   - LICENSE.md
