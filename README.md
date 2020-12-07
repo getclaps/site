@@ -16,17 +16,6 @@ A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytic
 
 ***
 
-## Cookie Clicker-like Engagement
-{:.mt4}
-
-<clap-button url="#improve-seo-ranking" text-placement="bottom" nowave></clap-button>
-
-Clap Button improves your SEO ranking by keeping users engaged on your site. 
-
-The component is designed to draw attention and keeps visitors active with it's Cookie Clicker[^1]-like mechanics,
-which are exploiting the fact that clicking something repeatedly is oddly satisfying.
-
-
 ## Privacy-Preserving Analytics
 {:.mt4}
 
@@ -45,6 +34,16 @@ Claps, an anonymous, self-selected score of which parts users _love_.
 <clap-button url="#built-in-spam-protection" text-placement="bottom" nowave></clap-button>
 
 Clap button uses a simple _Proof of Work_ algorithm to add an additional barrier to automated scripts attempting to manipulate your clap scores. -->
+
+## Cookie Clicker-like Engagement
+{:.mt4}
+
+<clap-button url="#improve-seo-ranking" text-placement="bottom" nowave></clap-button>
+
+Clap Button improves your SEO ranking by keeping users engaged on your site. 
+
+The component is designed to draw attention and keeps visitors active with it's Cookie Clicker[^1]-like mechanics,
+which are exploiting the fact that clicking something repeatedly is oddly satisfying.
 
 
 ## Living on the Edge
