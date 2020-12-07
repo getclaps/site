@@ -82,10 +82,13 @@ This will render the following button:
 <clap-button></clap-button>
 
 ## Pricing
-The Clap Button backend service is __$5.00 per month__ per origin for early-adopters. 
-Currently, this is limited to 100,000 views per month. If you need more [please contact me](mailto:getclaps@qwtel.com) with details.
 
-After you've completed the the payment, you'll be taken to your dashboard, where you'll be able to enter your domain. 
+<clap-button url="#pricing" text-placement="bottom" nowave></clap-button>
+
+The Clap Button backend service is __$5.00 per month__ per origin for early-adopters. 
+Currently, this is limited to 25,000 views per month. Higher tier plans will be added on demand.
+
+After you've completed the payment you'll be taken to your dashboard, where you'll be able to enter your domain. 
 After this step, `<clap-button/>` will work immediately on your site. 
 
 _Note that the Clap Button Dashboard is work in progress._
@@ -97,6 +100,9 @@ _However it doesn't look very nice and interactivity is limited right now._
 
 
 ## Limitations
+{:.mt4}
+
+<clap-button url="#limitations" text-placement="bottom" nowave></clap-button>
 
 Currently, usage it limited to smaller to medium-sized websites. 
 The infrastructure supports much higher volumes, but metering is not implemented yet. 
@@ -106,16 +112,16 @@ The infrastructure supports much higher volumes, but metering is not implemented
 {:.note.smaller.mb2 title="Hey there!"} -->
 
 Claps per month
-: 1,000,000
+: 100,000
 
 Views per month
-: 100,000
+: 25,000
 
 Clap requests per month
-: 100,000
+: 25,000
 
 Domains per subscription (e.g. `https://my.domain.com`)
-: 1
+: ∞
 
 URLs per domain
 : 10,000
@@ -124,11 +130,14 @@ Fragments per URL (e.g. `/path#fragment`)
 : 64
 
 
-## Close-To Open Source
+## Close To Open Source
+{:.mt4}
 
-The button and core of the backend worker are open sourced under [AGPL-3.0](licenses/AGPL-3.0.md) and can be freely copied and used within the limits of this license.
-Only the data access object, i.e. the database layer, remains closed source. You are free to provide your own implementation based on the [public interface](https://github.com/getclaps/worker/blob/master/src/dao.ts),
-~~or use a community-provided implementation~~.
+<clap-button url="#close-to-open-source" text-placement="bottom" nowave></clap-button>
+
+The web component and core of the backend are open sourced under [AGPL-3.0](licenses/AGPL-3.0.md) and can be used within the limits of this license.
+
+Only the database layer and billing module remain closed source. You are free to provide your own implementation of the Data Access Objected based on the [public interface](https://github.com/getclaps/worker/blob/master/src/dao.ts), or use a community-provided implementation.
 
 <!-- ## Config Example
 {:.mt4}
