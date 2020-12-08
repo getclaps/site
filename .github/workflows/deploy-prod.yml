@@ -11,13 +11,12 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - uses: qwtel/jekyll-action@bd2a124
+      - uses: qwtel/jekyll-action@bf1b71f
         env:
           BUNDLE_GITHUB__COM: x-access-token:${{ secrets.JEKYLL_PAT }}
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
         with:
           build_only: true
-          no_lockfile: true
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
