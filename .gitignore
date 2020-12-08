@@ -1,5 +1,6 @@
 vendor/bundle
 .bundle
+Gemfile.lock
 _site
 build
 dist
