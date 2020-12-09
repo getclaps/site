@@ -96,7 +96,7 @@ _All the relevant information is there and you can cancel your subscription._
 _However it doesn't look very nice and interactivity is limited right now._
 {:.note title="Important"} 
 
-{% include form.html btn_size="btn-lg" %}
+{% include form.html btn_size="btn-lg" cancel_url="/#pricing" %}
 
 
 ## Limitations
