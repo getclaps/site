@@ -14,7 +14,7 @@ case ENV['JEKYLL_ENV']
 when 'development'
   gem "jekyll-theme-hydejack", path: "~/GitHub/hydecorp/hydejack-site/#jekyll-theme-hydejack"
 else
-  gem "jekyll-theme-hydejack", git: "https://github.com/hydecorp/hydejack-dev", tag: "pro/v9.1.0-hysenberg.0"
+  gem "jekyll-theme-hydejack", git: "https://github.com/hydecorp/hydejack-dev", tag: "pro/v9.1.0-hysenberg.1"
 end
 
 # IMPORTANT: The followign gem is used to compile math formulas to 
