@@ -92,8 +92,7 @@ After you've completed the payment you'll be taken to your dashboard, where you'
 After this step, `<clap-button/>` will work immediately on your site. 
 
 _Note that the Clap Button Dashboard is work in progress._
-_All the relevant information is there and you can cancel your subscription._
-_However it doesn't look very nice and interactivity is limited right now._
+_You can view relevant information in the dashboard cancel your subscription._
 {:.note title="Important"} 
 
 {% include form.html btn_size="btn-lg" cancel_url="/#pricing" %}
@@ -111,19 +110,13 @@ The infrastructure supports much higher volumes, but metering is not implemented
 <!-- Don't feel like typing an email to a human? [Subscribe to our newsletter](#subscribe) instead and get informed when high-volume plans arrive.
 {:.note.smaller.mb2 title="Hey there!"} -->
 
-Claps per month
-: 100,000
-
 Views per month
 : 25,000
 
-Clap requests per month
-: 25,000
+Dashboards per subscription
+: 1
 
-Domains per subscription (e.g. `https://my.domain.com`)
-: ∞
-
-URLs per domain
+Pages per domain
 : 10,000
 
 Fragments per URL (e.g. `/path#fragment`)
