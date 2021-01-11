@@ -11,14 +11,15 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - uses: qwtel/jekyll-action@bf1b71f
+      - uses: helaili/jekyll-action@v2
         env:
-          BUNDLE_GITHUB__COM: x-access-token:${{ secrets.JEKYLL_PAT }}
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          BUNDLE_GITHUB__COM: x-access-token:${{ secrets.GH_REPO_PAT }}
+          JEKYLL_PAT: ${{ secrets.GH_REPO_PAT }}
         with:
+          jekyll_env: staging
           build_only: true
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          environment: 'production'
+          environment: staging

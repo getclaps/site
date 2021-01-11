@@ -4,22 +4,22 @@ layout: welcome
 
 # Clap Button
 
-<clap-button id="app-button"></clap-button>
+<clap-button class="app-button"></clap-button>
 
 A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytics) with Cookie Clicker-like [Engagement](#cookie-clicker-like-engagement).
 {:.lead.centered style="max-width:560px;margin-left:auto;margin-right:auto"}
 
 {% include form.html %}
 
-<!-- * Table of Contents
-{:toc .large-only} -->
-
 ***
+
+* Table of Contents
+{:toc .large-only}
 
 ## Privacy-Preserving Analytics
 {:.mt4}
 
-<clap-button url="#gdpr-compliant-analytics" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#privacy-preserving-analytics" text-placement="bottom" nowave></clap-button></p>
 
 Clap Button doubles as a privacy-friendly analytics solution. 
 It track pages, not people.
@@ -38,7 +38,7 @@ Clap button uses a simple _Proof of Work_ algorithm to add an additional barrier
 ## Cookie Clicker-like Engagement
 {:.mt4}
 
-<clap-button url="#improve-seo-ranking" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#cookie-clicker-like-engagement" text-placement="bottom" nowave></clap-button></p>
 
 Clap Button improves your SEO ranking by keeping users engaged on your site. 
 
@@ -49,7 +49,7 @@ which are exploiting the fact that clicking something repeatedly is oddly satisf
 ## Living on the Edge
 {:.mt4}
 
-<clap-button url="#living-on-the-edge" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#living-on-the-edge" text-placement="bottom" nowave></clap-button></p>
 
 Clap Button is built on fully managed, globally distributed infrastructure. 
 Response times are fast and it scales automatically to any load. 
@@ -60,7 +60,7 @@ Response times are fast and it scales automatically to any load.
 ## Zero-Config Example
 {:.mt6}
 
-<clap-button url="#zero-config-example" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#zero-config-example" text-placement="bottom" nowave></clap-button></p>
 
 The clap button is a custom element that can be added directly to the page. Here is a minimal example:
 
@@ -83,7 +83,7 @@ This will render the following button:
 
 ## Pricing
 
-<clap-button url="#pricing" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#pricing" text-placement="bottom" nowave></clap-button></p>
 
 The Clap Button backend service is __$5.00 per month__ per origin for early-adopters. 
 Currently, this is limited to 25,000 views per month. Higher tier plans will be added on demand.
@@ -91,17 +91,24 @@ Currently, this is limited to 25,000 views per month. Higher tier plans will be 
 After you've completed the payment you'll be taken to your dashboard, where you'll be able to enter your domain. 
 After this step, `<clap-button/>` will work immediately on your site. 
 
-_Note that the Clap Button Dashboard is work in progress._
-_You can view relevant information in the dashboard cancel your subscription._
-{:.note title="Important"} 
-
 {% include form.html btn_size="btn-lg" cancel_url="/#pricing" %}
+
+_Note that the Clap Button Dashboard is work in progress._
+_You can view relevant information and manage your subscription._
+_However, it is not looking super-pretty right now. See screenshot below:_
+{:.note title="Important" style="margin-bottom:2rem"} 
+
+![Dashboard Screenshot](assets/img/dashl.jpg){:.lead.dm-only}
+![Dashboard Screenshot](assets/img/dashd.jpg){:.lead.lm-only}
+
+The Clap Button Dashboard
+{:.figcaption}
 
 
 ## Limitations
 {:.mt4}
 
-<clap-button url="#limitations" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#limitations" text-placement="bottom" nowave></clap-button></p>
 
 Currently, usage it limited to smaller to medium-sized websites. 
 The infrastructure supports much higher volumes, but metering is not implemented yet. 
@@ -126,7 +133,7 @@ Fragments per URL (e.g. `/path#fragment`)
 ## Close To Open Source
 {:.mt4}
 
-<clap-button url="#close-to-open-source" text-placement="bottom" nowave></clap-button>
+<p><clap-button url="#close-to-open-source" text-placement="bottom" nowave></clap-button></p>
 
 The web component and core of the backend are open sourced under [AGPL-3.0](licenses/AGPL-3.0.md) and can be used within the limits of this license.
 
@@ -157,7 +164,7 @@ Zero-Config doesn't mean no config is possible: Make it your own with the follow
 
 
 <style>
-.page { position: relative }
+.page > p { position: relative }
 .page > header > h1 + .hr { 
   display: none; 
 }
@@ -165,16 +172,20 @@ Zero-Config doesn't mean no config is possible: Make it your own with the follow
 .mt6 { margin-top: 6rem }
 .mb2 { margin-bottom: 1.5rem }
 
+h1, h2, h3, .h1, .h2, .h3 { margin-top: 4rem }
+h4, h5, h6, .h4, .h5, .h6 { margin-top: 3rem }
+.page > hr { margin: 4rem 0 }
+
 clap-button {
   --clap-button-color: var(--accent-color);
 }
 
-h2 + clap-button[url^="#"] {
+h2 + p > clap-button[url^="#"] {
   margin: 0;
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: -5rem;
+  left: -6rem;
   margin-top: -3rem;
   font-size: smaller;
   color: var(--gray-text);
@@ -183,20 +194,37 @@ h2 + clap-button[url^="#"] {
 
 .page > header > h1 { 
   width: 100%!important;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   width: 100%!important;
 }
 
-#app-button {
-  width:10rem;
-  height:10rem;
-  margin: 5rem auto;
+.larger { font-size: larger; }
+.smaller { font-size: smaller; }
+
+p code {
+  display: inline-block;
+  margin-left: -.5em;
+}
+
+.app-button {
+  width: 8.5rem;
+  height: 8.5rem;
+  margin: 5.75rem auto;
   font-size: 1.5rem;
 }
 
-.larger { font-size: larger; }
-.smaller { font-size: smaller; }
-/* h2, h3, h4, h5, h6 { text-align: center; } */
+.layout-welcome { padding-top: 4rem; }
+#_navbar { transform: translateY(-5rem); }
+
+@media (prefers-color-scheme: dark) { .lm-only { display: none!important } }
+@media (prefers-color-scheme: light) { .dm-only { display: none!important } }
+.dark-mode .lm-only { display: none!important }
+.dark-mode .dm-only { display: unset!important }
+.light-mode .dm-only { display: none!important }
+.light-mode .lm-only { display: unset!important }
 
 </style>
+<script>
+  window.dispatchEvent(new HashChangeEvent('hashchange', { newURL: new URL('#noop', location).href }));
+</script>
