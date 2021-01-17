@@ -1,23 +1,20 @@
 ---
-layout: welcome
+layout: landing
+logo: |
+  <clap-button text-placement="bottom" style="width:8rem;height:8rem;margin:0 auto;font-size:1.2rem"></clap-button>
+description: >
+  A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytics) 
+  with Cookie Clicker-like [Engagement](#cookie-clicker-like-engagement).
+buttons: |
+  {% include form.html %}
 ---
 
 # Clap Button
-
-<clap-button class="app-button"></clap-button>
-
-A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytics) with Cookie Clicker-like [Engagement](#cookie-clicker-like-engagement).
-{:.lead.centered style="max-width:560px;margin-left:auto;margin-right:auto"}
-
-{% include form.html %}
-
-***
 
 * Table of Contents
 {:toc .large-only}
 
 ## Privacy-Preserving Analytics
-{:.mt4}
 
 <p><clap-button url="#privacy-preserving-analytics" text-placement="bottom" nowave></clap-button></p>
 
@@ -36,7 +33,6 @@ Claps, an anonymous, self-selected score of which parts users _love_.
 Clap button uses a simple _Proof of Work_ algorithm to add an additional barrier to automated scripts attempting to manipulate your clap scores. -->
 
 ## Cookie Clicker-like Engagement
-{:.mt4}
 
 <p><clap-button url="#cookie-clicker-like-engagement" text-placement="bottom" nowave></clap-button></p>
 
@@ -47,7 +43,6 @@ which are exploiting the fact that clicking something repeatedly is oddly satisf
 
 
 ## Living on the Edge
-{:.mt4}
 
 <p><clap-button url="#living-on-the-edge" text-placement="bottom" nowave></clap-button></p>
 
@@ -55,10 +50,8 @@ Clap Button is built on fully managed, globally distributed infrastructure.
 Response times are fast and it scales automatically to any load. 
 
 ***
-{:.mt4}
 
 ## Zero-Config Example
-{:.mt6}
 
 <p><clap-button url="#zero-config-example" text-placement="bottom" nowave></clap-button></p>
 
@@ -98,15 +91,16 @@ _You can view relevant information and manage your subscription._
 _However, it is not looking super-pretty right now. See screenshot below:_
 {:.note title="Important" style="margin-bottom:2rem"} 
 
-![Dashboard Screenshot](assets/img/dashl.jpg){:.lead.dm-only}
-![Dashboard Screenshot](assets/img/dashd.jpg){:.lead.lm-only}
+<picture>
+  <source srcset="assets/img/dashl.jpg" media="(prefers-color-scheme: dark)">
+  <img src="assets/img/dashd.jpg" class="lead" alt="Logo" width="172" height="172">
+</picture>
 
 The Clap Button Dashboard
 {:.figcaption}
 
 
 ## Limitations
-{:.mt4}
 
 <p><clap-button url="#limitations" text-placement="bottom" nowave></clap-button></p>
 
@@ -131,7 +125,6 @@ Fragments per URL (e.g. `/path#fragment`)
 
 
 ## Close To Open Source
-{:.mt4}
 
 <p><clap-button url="#close-to-open-source" text-placement="bottom" nowave></clap-button></p>
 
@@ -164,67 +157,20 @@ Zero-Config doesn't mean no config is possible: Make it your own with the follow
 
 
 <style>
-.page > p { position: relative }
-.page > header > h1 + .hr { 
-  display: none; 
-}
+  .page > p { position: relative }
+  .page > hr { margin: 4rem 0 }
+  h1, h2, h3, .h1, .h2, .h3 { margin-top: 4rem }
+  h4, h5, h6, .h4, .h5, .h6 { margin-top: 3rem }
 
-.mt6 { margin-top: 6rem }
-.mb2 { margin-bottom: 1.5rem }
+  p code {
+    display: inline-block;
+    margin-left: -.5em;
+  }
 
-h1, h2, h3, .h1, .h2, .h3 { margin-top: 4rem }
-h4, h5, h6, .h4, .h5, .h6 { margin-top: 3rem }
-.page > hr { margin: 4rem 0 }
-
-clap-button {
-  --clap-button-color: var(--accent-color);
-}
-
-h2 + p > clap-button[url^="#"] {
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  left: -6rem;
-  margin-top: -3rem;
-  font-size: smaller;
-  color: var(--gray-text);
-  --clap-button-color: var(--menu-text);
-}
-
-.page > header > h1 { 
-  width: 100%!important;
-  font-size: 4rem;
-  text-align: center;
-  width: 100%!important;
-}
-
-.larger { font-size: larger; }
-.smaller { font-size: smaller; }
-
-p code {
-  display: inline-block;
-  margin-left: -.5em;
-}
-
-.app-button {
-  width: 8.5rem;
-  height: 8.5rem;
-  margin: 5.75rem auto;
-  font-size: 1.5rem;
-}
-
-.layout-welcome { padding-top: 4rem; }
-#_navbar { transform: translateY(-5rem); }
-
-@media (prefers-color-scheme: dark) { .lm-only { display: none!important } }
-@media (prefers-color-scheme: light) { .dm-only { display: none!important } }
-.dark-mode .lm-only { display: none!important }
-.dark-mode .dm-only { display: unset!important }
-.light-mode .dm-only { display: none!important }
-.light-mode .lm-only { display: unset!important }
-
+  @media (prefers-color-scheme: dark) { .lm-only { display: none!important } }
+  @media (prefers-color-scheme: light) { .dm-only { display: none!important } }
+  .dark-mode .lm-only { display: none!important }
+  .dark-mode .dm-only { display: unset!important }
+  .light-mode .dm-only { display: none!important }
+  .light-mode .lm-only { display: unset!important }
 </style>
-<script>
-  window.dispatchEvent(new HashChangeEvent('hashchange', { newURL: new URL('#noop', location).href }));
-</script>
