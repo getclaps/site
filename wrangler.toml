@@ -6,16 +6,24 @@ route = ""
 zone_id = ""
 
 [site]
-bucket = "./build"
-entry-point = "workers-site"
+  bucket = "./build"
+  entry-point = "workers-site"
 
 [vars]
-JEKYLL_ENV = 'development'
+  JEKYLL_ENV = 'development'
+
+[env.staging]
+  name = "clap-site-staging"
+  route = "https://getclaps.dev/*"
+  zone_id = "a0f647422a7f0fba9b734898e8a7883f"
+
+  [env.staging.vars]
+    JEKYLL_ENV = 'staging'
 
 [env.production]
-name = "clap-site-production"
-route = "https://getclaps.dev/*"
-zone_id = "a0f647422a7f0fba9b734898e8a7883f"
+  name = "clap-site-production"
+  route = "https://clap-button.com/*"
+  zone_id = "921f99936380db6078d69bc9bdf50bc7"
 
-[env.production.vars]
-JEKYLL_ENV = 'production'
+  [env.production.vars]
+    JEKYLL_ENV = 'production'
