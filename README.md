@@ -5,18 +5,17 @@ logo: |
 description: >
   A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytics) 
   with Cookie Clicker-like [Engagement](#cookie-clicker-like-engagement).
-buttons: |
-  {% include form.html %}
 ---
 
 # Clap Button
+
+{% include form.html %}
+<!--end_header-->
 
 * Table of Contents
 {:toc .large-only}
 
 ## Privacy-Preserving Analytics
-
-<p><clap-button url="#privacy-preserving-analytics" text-placement="bottom" nowave></clap-button></p>
 
 Clap Button doubles as a privacy-friendly analytics solution. 
 It track pages, not people.
@@ -34,8 +33,6 @@ Clap button uses a simple _Proof of Work_ algorithm to add an additional barrier
 
 ## Cookie Clicker-like Engagement
 
-<p><clap-button url="#cookie-clicker-like-engagement" text-placement="bottom" nowave></clap-button></p>
-
 Clap Button improves your SEO ranking by keeping users engaged on your site. 
 
 The component is designed to draw attention and keeps visitors active with it's Cookie Clicker[^1]-like mechanics,
@@ -44,16 +41,12 @@ which are exploiting the fact that clicking something repeatedly is oddly satisf
 
 ## Living on the Edge
 
-<p><clap-button url="#living-on-the-edge" text-placement="bottom" nowave></clap-button></p>
-
 Clap Button is built on fully managed, globally distributed infrastructure. 
 Response times are fast and it scales automatically to any load. 
 
 ***
 
 ## Zero-Config Example
-
-<p><clap-button url="#zero-config-example" text-placement="bottom" nowave></clap-button></p>
 
 The clap button is a custom element that can be added directly to the page. Here is a minimal example:
 
@@ -75,8 +68,6 @@ This will render the following button:
 <clap-button></clap-button>
 
 ## Pricing
-
-<p><clap-button url="#pricing" text-placement="bottom" nowave></clap-button></p>
 
 The Clap Button backend service is __$5.00 per month__ per origin for early-adopters. 
 Currently, this is limited to 25,000 views per month. Higher tier plans will be added on demand.
@@ -102,8 +93,6 @@ The Clap Button Dashboard
 
 ## Limitations
 
-<p><clap-button url="#limitations" text-placement="bottom" nowave></clap-button></p>
-
 Currently, usage it limited to smaller to medium-sized websites. 
 The infrastructure supports much higher volumes, but metering is not implemented yet. 
 [Please contact me](mailto:getclaps@qwtel.com) if that's something you're interested in.
@@ -125,8 +114,6 @@ Fragments per URL (e.g. `/path#fragment`)
 
 
 ## Close To Open Source
-
-<p><clap-button url="#close-to-open-source" text-placement="bottom" nowave></clap-button></p>
 
 The web component and core of the backend are open sourced under [AGPL-3.0](licenses/AGPL-3.0.md) and can be used within the limits of this license.
 
