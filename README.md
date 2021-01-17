@@ -3,8 +3,8 @@ layout: landing
 logo: |
   <clap-button text-placement="bottom" style="width:8rem;height:8rem;margin:0 auto;font-size:1.2rem"></clap-button>
 description: >
-  A zero-config Clap Button that combines [Analytics](#privacy-preserving-analytics) 
-  with Cookie Clicker-like [Engagement](#cookie-clicker-like-engagement).
+  A zero-config **Clap Button** that combines [**Analytics**](#privacy-preserving-analytics) 
+  with Cookie Clicker-like [**Engagement**](#cookie-clicker-like-engagement).
 ---
 
 # Clap Button
