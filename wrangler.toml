@@ -13,7 +13,7 @@ zone_id = ""
   JEKYLL_ENV = 'development'
 
 [env.staging]
-  name = "clap-site-staging"
+  name = "clap-site-stage"
   route = "https://getclaps.dev/*"
   zone_id = "a0f647422a7f0fba9b734898e8a7883f"
 
