@@ -1,7 +1,7 @@
 ---
 layout: landing
 logo: |
-  <clap-button text-placement="bottom" style="width:8rem;height:8rem;margin:0 auto;font-size:1.2rem"></clap-button>
+  <clap-button text-placement="bottom" messages style="width:8rem;height:8rem;margin:0 auto;font-size:1.2rem"></clap-button>
 description: >
   A zero-config **Clap Button** that combines [**Analytics**](#privacy-preserving-analytics) 
   with Cookie Clicker-like [**Engagement**](#cookie-clicker-like-engagement).
@@ -15,6 +15,7 @@ description: >
 * Table of Contents
 {:toc .large-only}
 
+
 ## Privacy-Preserving Analytics
 
 Clap Button doubles as a privacy-friendly analytics solution. 
@@ -23,13 +24,6 @@ It track pages, not people.
 Unlike other analytics solutions, Clap Button also gives you insights along a second dimension: 
 Claps, an anonymous, self-selected score of which parts users _love_.
 
-
-<!-- ## Built-In Spam Protection
-{:.mt4}
-
-<clap-button url="#built-in-spam-protection" text-placement="bottom" nowave></clap-button>
-
-Clap button uses a simple _Proof of Work_ algorithm to add an additional barrier to automated scripts attempting to manipulate your clap scores. -->
 
 ## Cookie Clicker-like Engagement
 
@@ -66,6 +60,7 @@ The example only works if your site is hosted on __localhost__ or with an [activ
 This will render the following button:
 
 <clap-button></clap-button>
+
 
 ## Pricing
 
@@ -119,24 +114,6 @@ The web component and core of the backend are open sourced under [AGPL-3.0](lice
 
 Only the database layer and billing module remain closed source. You are free to provide your own implementation of the Data Access Objected based on the [public interface](https://github.com/getclaps/worker/blob/master/src/dao.ts), or use a community-provided implementation.
 
-<!-- ## Config Example
-{:.mt4}
-
-Zero-Config doesn't mean no config is possible: Make it your own with the following options:
-
-```html
-<clap-button 
-  url="#config-example" 
-  text-placement="bottom" 
-  style="--clap-button-color: gray"
-  nowave 
-></clap-button>
-```
-{:.larger}
-
-<clap-button url="#config-example" text-placement="bottom" nowave style="--clap-button-color: gray"></clap-button> -->
-
-
 
 [^1]: [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) is a popular online game that pioneered the "clicker" genre, where the main mechanic is clicking a single button. Much like clap buttons, it's using the fact that clicking something repeatedly is oddly satisfying.
 
@@ -146,18 +123,4 @@ Zero-Config doesn't mean no config is possible: Make it your own with the follow
 <style>
   .page > p { position: relative }
   .page > hr { margin: 4rem 0 }
-  h1, h2, h3, .h1, .h2, .h3 { margin-top: 4rem }
-  h4, h5, h6, .h4, .h5, .h6 { margin-top: 3rem }
-
-  p code {
-    display: inline-block;
-    margin-left: -.5em;
-  }
-
-  @media (prefers-color-scheme: dark) { .lm-only { display: none!important } }
-  @media (prefers-color-scheme: light) { .dm-only { display: none!important } }
-  .dark-mode .lm-only { display: none!important }
-  .dark-mode .dm-only { display: unset!important }
-  .light-mode .dm-only { display: none!important }
-  .light-mode .lm-only { display: unset!important }
 </style>
