@@ -30,16 +30,16 @@ author:
     npm:               https://www.npmjs.com/org/getclaps
     email:             getclaps@qwtel.com
 
-menu:
-  - title:             LICENSE
-    url:              /LICENSE/
-  - title:             CHANGELOG
-    url:              /CHANGELOG/
-legal:
-  - title:             LICENSE
-    url:              /LICENSE/
-  - title:             CHANGELOG
-    url:              /CHANGELOG/
+# menu:
+#   - title:             LICENSE
+#     url:              /LICENSE/
+#   - title:             CHANGELOG
+#     url:              /CHANGELOG/
+# legal:
+#   - title:             LICENSE
+#     url:              /LICENSE/
+#   - title:             CHANGELOG
+#     url:              /CHANGELOG/
 
 copyright:             © 2020. All rights reserved.
 
