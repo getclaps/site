@@ -22,8 +22,8 @@ zone_id = ""
 
 [env.production]
   name = "clap-site-production"
-  route = "https://clap-button.com/*"
-  zone_id = "921f99936380db6078d69bc9bdf50bc7"
+  route = "https://getclaps.app/*"
+  zone_id = "8951653b87b1882bd8547e59c78fb9fb"
 
   [env.production.vars]
     JEKYLL_ENV = 'production'

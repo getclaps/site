@@ -10,39 +10,6 @@
       h2.insertAdjacentElement('afterend', p);
     });
   });
-
-  /* Manual dark mode picture source fix */
-  /* TODO: what if content changes? */ 
-  document.querySelectorAll('picture').forEach(pic => {
-    const source = pic.querySelector('source[media*="dark"]');
-    const img = pic.querySelector('img');
-    if (source && img) {
-      pic.dataset.lightSrc = img.src;
-      pic.dataset.darkSrc = source.srcset;
-    }
-  });
-
-  new MutationObserver((e) => {
-    if (e[0].target.classList.contains('dark-mode')) {
-      document.querySelectorAll('picture').forEach(pic => {
-        const source = pic.querySelector('source[media*="dark"]');
-        const img = pic.querySelector('img');
-        if (img && pic.dataset.darkSrc) {
-          img.src = pic.dataset.darkSrc;
-          if (source) pic.removeChild(source);
-        }
-      });
-    } else if (e[0].target.classList.contains('light-mode')) {
-      document.querySelectorAll('picture').forEach(pic => {
-        const source = pic.querySelector('source[media*="dark"]');
-        const img = pic.querySelector('img');
-        if (img && pic.dataset.lightSrc) {
-          img.src = pic.dataset.lightSrc;
-          if (source) pic.removeChild(source);
-        }
-      });
-    }
-  }).observe(document.body, { attributes: true });
 </script>
 
 {% comment %}

@@ -75,7 +75,7 @@ defaults:
   - scope:
       path:            licenses/
     values:
-      layout:          legal
+      layout:          plain
       sitemap:         false
   - scope:
       type:            projects

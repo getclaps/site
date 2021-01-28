@@ -2,8 +2,8 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - master
+    tags: 
+      - v*
 
 jobs:
   deploy:
@@ -22,11 +22,11 @@ jobs:
           BUNDLE_GITHUB__COM: x-access-token:${{ secrets.GH_REPO_PAT }}
         with:
           token: ${{ secrets.GH_REPO_PAT }}
-          jekyll_env: staging
+          jekyll_env: production
           build_only: true
-          prebuild_commands: sed -i 's/getclaps.app/getclaps.dev/' _config.yaml
+          prebuild_commands: sed -i 's/getclaps.dev/getclaps.app/' _config.yaml
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          environment: staging
+          environment: production
