@@ -110,9 +110,10 @@ Fragments per URL (e.g. `/path#fragment`)
 
 ## Close To Open Source
 
-The web component and core of the backend are open sourced under [AGPL-3.0](licenses/AGPL-3.0.md) and can be used within the limits of this license.
+The web component and core of the backend are open sourced under [MIT](licenses/MIT.md) and can be used within the limits of this license.
 
-Only the database layer and billing module remain closed source. You are free to provide your own implementation of the Data Access Objected based on the [public interface](https://github.com/getclaps/worker/blob/master/src/dao.ts), or use a community-provided implementation.
+Only the database layer and billing module remain closed source. You are free to provide your own implementation of the Data Access Objected based on the [public interface](https://github.com/getclaps/worker/blob/master/src/dao.ts).
+See the [repository](https://github.com/getclaps/worker) for more.
 
 
 [^1]: [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) is a popular online game that pioneered the "clicker" genre, where the main mechanic is clicking a single button. Much like clap buttons, it's using the fact that clicking something repeatedly is oddly satisfying.

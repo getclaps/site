@@ -1,4 +1,4 @@
-url:                   https://getclaps.dev
+url:                   https://getclaps.app
 baseurl:               ''
 
 lang:                  en
@@ -32,10 +32,10 @@ author:
 
 menu:
   - title:             Dashboard
-    url:               https://worker.getclaps.dev
+    url:               https://worker.getclaps.app
 legal:
   - title:             Dashboard
-    url:               https://worker.getclaps.dev
+    url:               https://worker.getclaps.app
 
 copyright:             © 2021. All rights reserved.
 
