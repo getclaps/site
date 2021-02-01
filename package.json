@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "@getclaps/site",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getclaps/site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/getclaps/site/issues"
+  },
+  "homepage": "https://getclaps.app/"
+}
