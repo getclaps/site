@@ -24,7 +24,7 @@ jobs:
           token: ${{ secrets.GH_REPO_PAT }}
           jekyll_env: production
           build_only: true
-          prebuild_commands: sed -i 's/getclaps.dev/getclaps.app/' _config.yaml
+          pre_build_commands: sed -i 's/getclaps.app/getclaps.dev/' _config.yml
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
