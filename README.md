@@ -5,6 +5,7 @@ logo: |
 description: >
   A zero-config **Clap Button** that combines [**Analytics**](#privacy-preserving-analytics) 
   with Cookie Clicker-like [**Engagement**](#cookie-clicker-like-engagement).
+permalink: /
 ---
 
 # Clap Button
