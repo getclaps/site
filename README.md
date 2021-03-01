@@ -65,7 +65,7 @@ This will render the following button:
 
 ## Pricing
 
-The Clap Button backend service is __$5.00 per month__ per origin for early-adopters. 
+The Clap Button backend service is __$2.99 per month__ per origin for early-adopters. 
 Currently, this is limited to 25,000 views per month. Higher tier plans will be added on demand.
 
 After you've completed the payment you'll be taken to your dashboard, where you'll be able to enter your domain. 
