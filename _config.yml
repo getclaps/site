@@ -20,7 +20,7 @@ clap_button: true
 #   - binary
 
 logo:                  /assets/img/logo.svg
-favicon:               /assets/img/logo.png
+favicon:               /favicon.ico
 
 author:
   name:                Florian Klampfer
